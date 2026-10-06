@@ -1,0 +1,87 @@
+
+    body{
+        background-color: #1a1919;
+    }
+    .music-section {
+    padding: 80px 0;
+    background-color: #1a1919;
+    color: white;
+}
+
+.music-section h2 {
+    color: rgb(8, 101, 0);
+    font-family: "Bangers";
+    font-size: 48px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+.album-row {
+    display: flex;
+    gap: 30px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 60px 30px 60px;
+
+    scroll-behavior: smooth;
+}
+
+.album {
+    position: relative;
+    flex: 0 0 400px;
+    overflow: hidden;
+}
+
+.album img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.album-text{
+position: absolute;
+bottom: 0;
+left: 0;
+
+width: 100%;
+padding: 30px 20px;
+
+box-sizing: border-box;
+
+background: #1a1919;
+color: white;
+
+opacity: 0;
+transform: translateY(20px);
+
+transition: all 0.3s ease;
+}
+
+.album:hover .album-text{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.album-text h3 {
+    font-family: "Bangers";
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color:rgb(255, 104, 3);
+}
+
+.album-text p {
+    margin: 0;
+    font-family: "Bangers";
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgb(255, 96, 4);
+}
+
+.album:hover img {
+    transform: scale(1.03);
+}
